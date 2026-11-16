@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Departments | StudyBuddy</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header><h1>StudyBuddy</h1><nav><a href="../index.html">Home</a> | <a href="../admin/dashboard.html">Dashboard</a> | <a href="../admin/users.html">Users</a> | <a href="../admin/departments.html">Departments</a> | <a href="../admin/announcements.html">Announcements</a> | <a href="../admin/analytics.html">Analytics</a> | <a href="../profile.html">My Profile</a> | <a href="../change-password.html">Change Password</a> | <a href="../login.html">Logout</a></nav></header>
+<hr>
+<main>
+<h2>Departments</h2>
+<form action="#" method="post">
+<fieldset><legend><b>Add department</b></legend>
+<p><label for="name">Department name</label><br><input type="text" id="name" name="name" required></p>
+<p><label for="coordinator">Coordinator</label><br><select id="coordinator" name="coordinator"><option value="">-- Select --</option><option value="Dr. Karim">Dr. Karim</option><option value="Ms. Farzana">Ms. Farzana</option></select></p>
+<button type="submit">Add department</button> <button type="reset">Reset</button>
+</fieldset></form>
+<table border="1" cellpadding="6" cellspacing="0"><thead><tr><th>Department</th><th>Coordinator</th><th>Actions</th></tr></thead><tbody><tr><td>Computer Science</td><td>Dr. Karim</td><td><a href="#edit-dept">Edit</a> <form action="#" method="post" style="display:inline"><input type="hidden" name="id" value="1"><input type="hidden" name="action" value="delete"><button type="submit">Delete</button></form></td></tr></tbody></table>
+<form id="edit-dept" action="#" method="post">
+<fieldset><legend><b>Edit department</b></legend>
+<input type="hidden" name="id" value="1">
+<p><label for="name">Department name</label><br><input type="text" id="name" name="name" required></p>
+<p><label for="coordinator">Coordinator</label><br><select id="coordinator" name="coordinator"><option value="">-- Select --</option><option value="Dr. Karim">Dr. Karim</option><option value="Ms. Farzana">Ms. Farzana</option></select></p>
+<button type="submit">Update department</button> <button type="reset">Reset</button>
+</fieldset></form>
+</main>
+<hr>
+<footer><p>StudyBuddy: Peer Tutoring and Study Partner Finder &copy; 2026</p></footer>
+<script src="../js/app.js"></script>
+</body>
+</html>

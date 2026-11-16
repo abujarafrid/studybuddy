@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Availability Slots | StudyBuddy</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header><h1>StudyBuddy</h1><nav><a href="../index.html">Home</a> | <a href="../tutor/dashboard.html">Dashboard</a> | <a href="../tutor/tutor-profile.html">Tutor Profile</a> | <a href="../tutor/availability.html">Availability</a> | <a href="../tutor/session-requests.html">Session Requests</a> | <a href="../tutor/resources.html">Resources</a> | <a href="../profile.html">My Profile</a> | <a href="../change-password.html">Change Password</a> | <a href="../login.html">Logout</a></nav></header>
+<hr>
+<main>
+<h2>Availability Slots</h2>
+<form action="#" method="post">
+<fieldset><legend><b>Add slot</b></legend>
+<p><label for="day">Day</label><br><select id="day" name="day" required><option value="">-- Select --</option><option value="saturday">Saturday</option><option value="sunday">Sunday</option><option value="monday">Monday</option><option value="tuesday">Tuesday</option><option value="wednesday">Wednesday</option><option value="thursday">Thursday</option><option value="friday">Friday</option></select></p>
+<p><label for="start_time">Start time</label><br><input type="time" id="start_time" name="start_time" required></p>
+<p><label for="end_time">End time</label><br><input type="time" id="end_time" name="end_time" required></p>
+<button type="submit">Add slot</button> <button type="reset">Reset</button>
+</fieldset></form>
+<table border="1" cellpadding="6" cellspacing="0"><thead><tr><th>Day</th><th>Start</th><th>End</th><th>Actions</th></tr></thead><tbody><tr><td>Monday</td><td>18:00</td><td>19:00</td><td><a href="#edit-slot">Edit</a> <form action="#" method="post" style="display:inline"><input type="hidden" name="id" value="1"><input type="hidden" name="action" value="delete"><button type="submit">Delete</button></form></td></tr><tr><td>Wednesday</td><td>20:00</td><td>21:00</td><td><a href="#edit-slot">Edit</a> <form action="#" method="post" style="display:inline"><input type="hidden" name="id" value="2"><input type="hidden" name="action" value="delete"><button type="submit">Delete</button></form></td></tr></tbody></table>
+<form id="edit-slot" action="#" method="post">
+<fieldset><legend><b>Edit slot</b></legend>
+<input type="hidden" name="id" value="1">
+<p><label for="day">Day</label><br><select id="day" name="day" required><option value="">-- Select --</option><option value="saturday">Saturday</option><option value="sunday">Sunday</option><option value="monday">Monday</option><option value="tuesday">Tuesday</option><option value="wednesday">Wednesday</option><option value="thursday">Thursday</option><option value="friday">Friday</option></select></p>
+<p><label for="start_time">Start time</label><br><input type="time" id="start_time" name="start_time" required></p>
+<p><label for="end_time">End time</label><br><input type="time" id="end_time" name="end_time" required></p>
+<button type="submit">Update slot</button> <button type="reset">Reset</button>
+</fieldset></form>
+</main>
+<hr>
+<footer><p>StudyBuddy: Peer Tutoring and Study Partner Finder &copy; 2026</p></footer>
+<script src="../js/app.js"></script>
+</body>
+</html>

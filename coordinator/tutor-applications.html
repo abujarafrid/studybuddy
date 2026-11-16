@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tutor Applications | StudyBuddy</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header><h1>StudyBuddy</h1><nav><a href="../index.html">Home</a> | <a href="../coordinator/dashboard.html">Dashboard</a> | <a href="../coordinator/tutor-applications.html">Tutor Applications</a> | <a href="../coordinator/courses.html">Courses</a> | <a href="../coordinator/reports.html">Reports</a> | <a href="../coordinator/activity.html">Activity</a> | <a href="../profile.html">My Profile</a> | <a href="../change-password.html">Change Password</a> | <a href="../login.html">Logout</a></nav></header>
+<hr>
+<main>
+<h2>Tutor Applications</h2>
+<table border="1" cellpadding="6" cellspacing="0"><thead><tr><th>Applicant</th><th>CGPA</th><th>Courses</th><th>Proof</th><th>Status</th><th>Decision</th></tr></thead><tbody><tr><td>Rahim</td><td>3.85</td><td>CSE201, CSE301</td><td><a href="#">transcript.pdf</a></td><td>Pending</td><td><form action="#" method="post">
+<fieldset><legend><b>Decision</b></legend>
+<input type="hidden" name="id" value="5">
+<fieldset><legend>Decision</legend><label><input type="radio" name="decision" value="approve" required> Approve</label> <label><input type="radio" name="decision" value="reject"> Reject</label> </fieldset>
+<p><label for="remarks">Remarks</label><br><textarea id="remarks" name="remarks" rows="2" cols="40" ></textarea></p>
+<button type="submit">Save decision</button>
+</fieldset></form>
+</td></tr></tbody></table>
+</main>
+<hr>
+<footer><p>StudyBuddy: Peer Tutoring and Study Partner Finder &copy; 2026</p></footer>
+<script src="../js/app.js"></script>
+</body>
+</html>

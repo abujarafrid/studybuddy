@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Find Study Partners | StudyBuddy</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header><h1>StudyBuddy</h1><nav><a href="../index.html">Home</a> | <a href="../student/dashboard.html">Dashboard</a> | <a href="../student/find-partners.html">Find Partners</a> | <a href="../student/partner-requests.html">Partner Requests</a> | <a href="../student/book-session.html">Book a Tutor</a> | <a href="../student/my-sessions.html">My Sessions</a> | <a href="../student/review.html">Reviews</a> | <a href="../profile.html">My Profile</a> | <a href="../change-password.html">Change Password</a> | <a href="../login.html">Logout</a></nav></header>
+<hr>
+<main>
+<h2>Find Study Partners</h2>
+<form action="#" method="get">
+<fieldset><legend><b>Search filters</b></legend>
+<p><label for="department">Department</label><br><select id="department" name="department"><option value="">-- Select --</option><option value="Computer Science">Computer Science</option><option value="Software Engineering">Software Engineering</option><option value="Electrical & Electronic Engineering">Electrical & Electronic Engineering</option><option value="Business Administration">Business Administration</option></select></p>
+<p><label for="course">Course</label><br><select id="course" name="course"><option value="">-- Select --</option><option value="CSE101 Programming Fundamentals">CSE101 Programming Fundamentals</option><option value="CSE201 Data Structures">CSE201 Data Structures</option><option value="MAT101 Calculus">MAT101 Calculus</option><option value="PHY101 Physics">PHY101 Physics</option><option value="CSE301 Machine Learning">CSE301 Machine Learning</option></select></p>
+<fieldset><legend>Available days</legend><label><input type="checkbox" name="days[]" value="saturday"> Saturday</label> <label><input type="checkbox" name="days[]" value="sunday"> Sunday</label> <label><input type="checkbox" name="days[]" value="monday"> Monday</label> <label><input type="checkbox" name="days[]" value="tuesday"> Tuesday</label> <label><input type="checkbox" name="days[]" value="wednesday"> Wednesday</label> <label><input type="checkbox" name="days[]" value="thursday"> Thursday</label> <label><input type="checkbox" name="days[]" value="friday"> Friday</label> </fieldset>
+<p><label for="from_time">Free from</label><br><input type="time" id="from_time" name="from_time" ></p>
+<p><label for="to_time">Free until</label><br><input type="time" id="to_time" name="to_time" ></p>
+<fieldset><legend>Study method</legend><label><input type="radio" name="study_method" value="online"> Online</label> <label><input type="radio" name="study_method" value="in_person"> In-person</label> <label><input type="radio" name="study_method" value="hybrid"> Hybrid</label> </fieldset>
+<p><label for="goal">Learning goal</label><br><select id="goal" name="goal"><option value="">-- Select --</option><option value="exam">Exam preparation</option><option value="assignment">Assignment help</option><option value="concept">Concept clearing</option><option value="project">Project work</option></select></p>
+<p><label for="min_score">Minimum match score (%)</label><br><input type="number" id="min_score" name="min_score" min="0" max="100" value="0"></p>
+<button type="submit">Search</button> <button type="reset">Reset</button>
+</fieldset></form>
+<h3>Results</h3><table border="1" cellpadding="6" cellspacing="0"><thead><tr><th>Name</th><th>Department</th><th>Shared courses</th><th>Common slots</th><th>Method</th><th>Match score</th><th>Action</th></tr></thead><tbody><tr><td>Nusrat</td><td>Computer Science</td><td>CSE201, CSE301</td><td>3</td><td>Hybrid</td><td>82%</td><td><form action="#" method="post" style="display:inline"><input type="hidden" name="id" value="2"><input type="hidden" name="action" value="send_request"><input type="hidden" name="course" value="CSE201"><button type="submit">Send request</button></form></td></tr><tr><td>Tanvir</td><td>Software Engineering</td><td>CSE201</td><td>1</td><td>Online</td><td>54%</td><td><form action="#" method="post" style="display:inline"><input type="hidden" name="id" value="4"><input type="hidden" name="action" value="send_request"><button type="submit">Send request</button></form></td></tr></tbody></table>
+</main>
+<hr>
+<footer><p>StudyBuddy: Peer Tutoring and Study Partner Finder &copy; 2026</p></footer>
+<script src="../js/app.js"></script>
+</body>
+</html>

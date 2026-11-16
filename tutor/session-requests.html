@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Session Requests | StudyBuddy</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header><h1>StudyBuddy</h1><nav><a href="../index.html">Home</a> | <a href="../tutor/dashboard.html">Dashboard</a> | <a href="../tutor/tutor-profile.html">Tutor Profile</a> | <a href="../tutor/availability.html">Availability</a> | <a href="../tutor/session-requests.html">Session Requests</a> | <a href="../tutor/resources.html">Resources</a> | <a href="../profile.html">My Profile</a> | <a href="../change-password.html">Change Password</a> | <a href="../login.html">Logout</a></nav></header>
+<hr>
+<main>
+<h2>Session Requests</h2>
+<table border="1" cellpadding="6" cellspacing="0"><thead><tr><th>Student</th><th>Course</th><th>Topic</th><th>Date & time</th><th>Status</th><th>Actions</th></tr></thead><tbody><tr><td>Rafi</td><td>CSE201</td><td>Binary trees</td><td>2026-10-28 18:00</td><td>Pending</td><td><form action="#" method="post" style="display:inline"><input type="hidden" name="id" value="11"><input type="hidden" name="action" value="accept"><button type="submit">Accept</button></form><form action="#" method="post" style="display:inline"><input type="hidden" name="id" value="11"><input type="hidden" name="action" value="decline"><button type="submit">Decline</button></form></td></tr><tr><td>Nusrat</td><td>CSE301</td><td>Regression</td><td>2026-10-30 20:00</td><td>Confirmed</td><td><form action="#" method="post" style="display:inline"><input type="hidden" name="id" value="13"><input type="hidden" name="action" value="complete"><button type="submit">Mark completed</button></form> <a href="#reschedule">Reschedule</a></td></tr></tbody></table>
+<form id="reschedule" action="#" method="post">
+<fieldset><legend><b>Reschedule session</b></legend>
+<input type="hidden" name="id" value="13">
+<p><label for="date">New date</label><br><input type="date" id="date" name="date" required></p>
+<p><label for="time">New time</label><br><input type="time" id="time" name="time" required></p>
+<p><label for="reason">Reason</label><br><textarea id="reason" name="reason" rows="4" cols="40" ></textarea></p>
+<button type="submit">Send change</button> <button type="reset">Reset</button>
+</fieldset></form>
+</main>
+<hr>
+<footer><p>StudyBuddy: Peer Tutoring and Study Partner Finder &copy; 2026</p></footer>
+<script src="../js/app.js"></script>
+</body>
+</html>

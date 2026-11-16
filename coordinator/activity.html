@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Department Activity | StudyBuddy</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header><h1>StudyBuddy</h1><nav><a href="../index.html">Home</a> | <a href="../coordinator/dashboard.html">Dashboard</a> | <a href="../coordinator/tutor-applications.html">Tutor Applications</a> | <a href="../coordinator/courses.html">Courses</a> | <a href="../coordinator/reports.html">Reports</a> | <a href="../coordinator/activity.html">Activity</a> | <a href="../profile.html">My Profile</a> | <a href="../change-password.html">Change Password</a> | <a href="../login.html">Logout</a></nav></header>
+<hr>
+<main>
+<h2>Department Activity</h2>
+<form action="#" method="get">
+<fieldset><legend><b>Filter</b></legend>
+<p><label for="course">Course</label><br><select id="course" name="course"><option value="">-- Select --</option><option value="CSE101 Programming Fundamentals">CSE101 Programming Fundamentals</option><option value="CSE201 Data Structures">CSE201 Data Structures</option><option value="MAT101 Calculus">MAT101 Calculus</option><option value="PHY101 Physics">PHY101 Physics</option><option value="CSE301 Machine Learning">CSE301 Machine Learning</option></select></p>
+<p><label for="from">From</label><br><input type="date" id="from" name="from" ></p>
+<p><label for="to">To</label><br><input type="date" id="to" name="to" ></p>
+<button type="submit">Show</button> <button type="reset">Reset</button>
+</fieldset></form>
+<table border="1" cellpadding="6" cellspacing="0"><thead><tr><th>Course</th><th>Sessions</th><th>Active tutors</th><th>Partner requests</th></tr></thead><tbody><tr><td>CSE201</td><td>14</td><td>3</td><td>9</td></tr><tr><td>CSE301</td><td>8</td><td>2</td><td>5</td></tr></tbody></table>
+</main>
+<hr>
+<footer><p>StudyBuddy: Peer Tutoring and Study Partner Finder &copy; 2026</p></footer>
+<script src="../js/app.js"></script>
+</body>
+</html>

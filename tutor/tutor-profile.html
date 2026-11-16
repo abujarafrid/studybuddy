@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tutor Profile | StudyBuddy</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header><h1>StudyBuddy</h1><nav><a href="../index.html">Home</a> | <a href="../tutor/dashboard.html">Dashboard</a> | <a href="../tutor/tutor-profile.html">Tutor Profile</a> | <a href="../tutor/availability.html">Availability</a> | <a href="../tutor/session-requests.html">Session Requests</a> | <a href="../tutor/resources.html">Resources</a> | <a href="../profile.html">My Profile</a> | <a href="../change-password.html">Change Password</a> | <a href="../login.html">Logout</a></nav></header>
+<hr>
+<main>
+<h2>Tutor Profile</h2>
+<form action="#" method="post" enctype="multipart/form-data">
+<fieldset><legend><b>Tutor application / profile</b></legend>
+<p><label for="bio">Bio</label><br><textarea id="bio" name="bio" rows="4" cols="40" required maxlength="500"></textarea></p>
+<p><label for="cgpa">CGPA</label><br><input type="number" id="cgpa" name="cgpa" min="2.5" max="4" step="0.01" required></p>
+<fieldset><legend>Courses you can teach</legend><label><input type="checkbox" name="courses[]" value="CSE101"> CSE101 Programming Fundamentals</label> <label><input type="checkbox" name="courses[]" value="CSE201"> CSE201 Data Structures</label> <label><input type="checkbox" name="courses[]" value="MAT101"> MAT101 Calculus</label> <label><input type="checkbox" name="courses[]" value="PHY101"> PHY101 Physics</label> <label><input type="checkbox" name="courses[]" value="CSE301"> CSE301 Machine Learning</label> </fieldset>
+<fieldset><legend>Teaching method</legend><label><input type="radio" name="study_method" value="online" required> Online</label> <label><input type="radio" name="study_method" value="in_person"> In-person</label> <label><input type="radio" name="study_method" value="hybrid"> Hybrid</label> </fieldset>
+<p><label for="proof">Transcript / proof (PDF)</label><br><input type="file" id="proof" name="proof" accept="application/pdf"></p>
+<button type="submit">Submit for verification</button> <button type="reset">Reset</button>
+</fieldset></form>
+</main>
+<hr>
+<footer><p>StudyBuddy: Peer Tutoring and Study Partner Finder &copy; 2026</p></footer>
+<script src="../js/app.js"></script>
+</body>
+</html>

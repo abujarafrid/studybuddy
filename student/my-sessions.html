@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Sessions | StudyBuddy</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header><h1>StudyBuddy</h1><nav><a href="../index.html">Home</a> | <a href="../student/dashboard.html">Dashboard</a> | <a href="../student/find-partners.html">Find Partners</a> | <a href="../student/partner-requests.html">Partner Requests</a> | <a href="../student/book-session.html">Book a Tutor</a> | <a href="../student/my-sessions.html">My Sessions</a> | <a href="../student/review.html">Reviews</a> | <a href="../profile.html">My Profile</a> | <a href="../change-password.html">Change Password</a> | <a href="../login.html">Logout</a></nav></header>
+<hr>
+<main>
+<h2>My Sessions</h2>
+<table border="1" cellpadding="6" cellspacing="0"><thead><tr><th>Tutor</th><th>Course</th><th>Date & time</th><th>Method</th><th>Status</th><th>Actions</th></tr></thead><tbody><tr><td>Rahim</td><td>CSE201</td><td>2026-10-28 18:00</td><td>Online</td><td>Confirmed</td><td><form action="#" method="post" style="display:inline"><input type="hidden" name="id" value="11"><input type="hidden" name="action" value="cancel"><button type="submit">Cancel</button></form></td></tr><tr><td>Sadia</td><td>MAT101</td><td>2026-11-02 20:00</td><td>In-person</td><td>Pending</td><td><form action="#" method="post" style="display:inline"><input type="hidden" name="id" value="12"><input type="hidden" name="action" value="cancel"><button type="submit">Cancel</button></form> <a href="#reschedule">Reschedule</a></td></tr><tr><td>Rahim</td><td>CSE201</td><td>2026-10-15 18:00</td><td>Online</td><td>Completed</td><td><a href="review.html">Write review</a></td></tr></tbody></table>
+<form id="reschedule" action="#" method="post">
+<fieldset><legend><b>Reschedule session</b></legend>
+<input type="hidden" name="id" value="12">
+<p><label for="slot">New slot</label><br><select id="slot" name="slot" required><option value="">-- Select --</option><option value="Mon 18:00-19:00">Mon 18:00-19:00</option><option value="Wed 20:00-21:00">Wed 20:00-21:00</option></select></p>
+<p><label for="date">New date</label><br><input type="date" id="date" name="date" required></p>
+<button type="submit">Request change</button> <button type="reset">Reset</button>
+</fieldset></form>
+</main>
+<hr>
+<footer><p>StudyBuddy: Peer Tutoring and Study Partner Finder &copy; 2026</p></footer>
+<script src="../js/app.js"></script>
+</body>
+</html>

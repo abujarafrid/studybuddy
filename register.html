@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create an Account | StudyBuddy</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header><h1>StudyBuddy</h1><nav><a href="index.html">Home</a> | <a href="login.html">Login</a> | <a href="register.html">Register</a></nav></header>
+<hr>
+<main>
+<h2>Create an Account</h2>
+<form action="#" method="post">
+<fieldset><legend><b>Registration</b></legend>
+<p><label for="name">Full name</label><br><input type="text" id="name" name="name" required minlength="2" maxlength="80" placeholder="Your full name"></p>
+<p><label for="student_id">Student ID</label><br><input type="text" id="student_id" name="student_id" required pattern="[0-9]{2}-[0-9]{5}-[0-9]" placeholder="e.g. 23-12345-1" title="Format: 23-12345-1"></p>
+<p><label for="email">University email</label><br><input type="email" id="email" name="email" required></p>
+<p><label for="phone">Phone</label><br><input type="tel" id="phone" name="phone" pattern="01[0-9]{9}" placeholder="01XXXXXXXXX"></p>
+<p><label for="department">Department</label><br><select id="department" name="department" required><option value="">-- Select --</option><option value="Computer Science">Computer Science</option><option value="Software Engineering">Software Engineering</option><option value="Electrical & Electronic Engineering">Electrical & Electronic Engineering</option><option value="Business Administration">Business Administration</option></select></p>
+<fieldset><legend>I want to join as</legend><label><input type="radio" name="role" value="student" required> Student (find partners / tutors)</label> <label><input type="radio" name="role" value="tutor"> Peer Tutor (apply to tutor)</label> </fieldset>
+<fieldset><legend>Preferred study method</legend><label><input type="radio" name="study_method" value="online" required> Online</label> <label><input type="radio" name="study_method" value="in_person"> In-person</label> <label><input type="radio" name="study_method" value="hybrid"> Hybrid</label> </fieldset>
+<p><label for="password">Password</label><br><input type="password" id="password" name="password" required minlength="8"></p>
+<p><label for="confirm_password">Confirm password</label><br><input type="password" id="confirm_password" name="confirm_password" required minlength="8"></p>
+<p><label><input type="checkbox" name="terms" required> I agree to the community rules</label></p>
+<button type="submit">Create account</button> <button type="reset">Reset</button>
+</fieldset></form>
+</main>
+<hr>
+<footer><p>StudyBuddy: Peer Tutoring and Study Partner Finder &copy; 2026</p></footer>
+<script src="js/app.js"></script>
+</body>
+</html>
